@@ -1,0 +1,145 @@
+@charset "ISO-8859-1";
+#indoor.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+/* Header Section */
+.header {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #004d40; /* Adjust background color */
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+    text-align: left;
+    background-color: #e0e0e0;
+}
+
+.breadcrumb a {
+    color: #004d40;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+/* Full-width banner */
+.banner {
+    width: 100%;
+    height: 250px; /* Adjust as needed */
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin below banner */
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.products {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds space between products */
+}
+
+.product {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: calc(25% - 25px); /* Adjusts the width to fit 4 products per row with the gap */
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Ensure content stays inside the product box */
+}
+
+.product img {
+    width: 100%; /* Ensures the image takes the full width of the container */
+    height: auto;
+    max-width: 200px; /* Set a maximum width for the images */
+    max-height: 250px; /* Set a maximum height for the images */
+    object-fit: cover; /* Ensures the image covers the given space */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    transition: transform 0.3s ease; /* Smooth transition for the transform */
+}
+
+/* Zoom-out effect on hover */
+.product img:hover {
+    transform: scale(1.1); /* Slightly zoom out the image */
+}
+
+.product .sale {
+    background-color: #ffd700;
+    padding: 3px 6px;
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1; /* Ensure the sale badge stays on top */
+}
+
+.product .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.product .star {
+    color: #ffd700;
+    font-size: 25px; /* Increased font size for stars */
+    margin-right: 2px;
+}
+
+/* Updated styles for price */
+.product .price {
+    margin: 10px 0;
+    color: #149253; /* Change the color of the price */
+    font-size: 16px; /* Adjust the font size if needed */
+}
+
+.product .price del {
+    color: #999; /* Color for the original price */
+}
+
+/* Updated styles for button */
+.product button {
+    background-color: #149253; /* Change the background color of the button */
+    color: #fff; /* Text color of the button */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product button:hover {
+    background-color: #149253; /* Background color on hover */
+}

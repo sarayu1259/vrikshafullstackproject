@@ -1,0 +1,137 @@
+@charset "ISO-8859-1";
+//help.css
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    /*background-color: #149253;*/
+    color: white;
+    /*padding: 1em;*/
+    text-align: center;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    padding: 2em;
+    height: 300px; /* Adjust as needed */
+    align-items: center; /* Center content vertically */
+    gap: 2em; /* Space between contact methods */
+}
+
+.contact-method {
+    text-align: center;
+    width: 400px; /* Adjust width */
+    background-color: #149253; /* Slightly transparent background */
+    padding: 1em;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.contact-method img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact-method button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.contact-method button:hover {
+    background-color: black;
+}
+
+main {
+    padding: 20px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center content horizontally */
+    gap: 20px; /* Space between FAQ items */
+}
+
+.faq-item {
+    flex: 1 1 calc(25% - 40px); /* Ensure four items per row */
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer; /* Add pointer cursor to indicate clickable items */
+}
+
+.faq-item img {
+    height: 100px; /* Increase icon size */
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
